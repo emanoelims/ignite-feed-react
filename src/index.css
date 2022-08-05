@@ -1,6 +1,8 @@
 :root {
   --color-title: #e1e1e6;
   --shape-primary: #202024;
+
+  --border-radius-regular: 8px;
 }
 
 *, *::before, *::after {
