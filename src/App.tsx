@@ -1,6 +1,8 @@
+import Header from "./Header";
+
 const App = () => {
   return (
-    <h1>Ignite Feed</h1>
+    <Header/>
   );
 }
 
