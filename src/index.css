@@ -1,3 +1,8 @@
+:root {
+  --color-title: #e1e1e6;
+  --shape-primary: #202024;
+}
+
 *, *::before, *::after {
   box-sizing: border-box;
 }
