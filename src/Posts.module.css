@@ -45,7 +45,7 @@
 
 .postContent {
   padding-block: 2rem;
-  color: var(--color-whtie);
+  color: var(--color-white);
 }
 
 .postContent p {
@@ -104,7 +104,7 @@
 
   font-size: 1rem;
   font-weight: 700;
-  color: var(--color-whtie);
+  color: var(--color-white);
 
   transition: background-color 0.1s;
 }
