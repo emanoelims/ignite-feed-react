@@ -4,6 +4,7 @@
 
   --color-white: #ffffff;
   --color-title: #e1e1e6;
+  --color-text-base: #c4c4cc;
   --color-support-text: #8d8d99;
   --shape-primary: #202024;
   --shape-sencodary: #29292e;
@@ -35,6 +36,7 @@ h1, h2, h3, h4, h5, h6 {
 
 p {
   margin: 0;
+  color: var(--color-text-base);
 }
 
 img {
