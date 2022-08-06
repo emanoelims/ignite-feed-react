@@ -46,3 +46,11 @@ input,
 textarea {
   font: inherit;
 }
+
+:focus {
+  outline: 2px solid var(--brand-primary-dark);
+}
+
+a:focus {
+  border-radius: 2px;
+}
