@@ -1,0 +1,8 @@
+.container {
+  box-sizing: content-box;
+  width: 3.75rem;
+  height: 3.75rem;
+  border: 2px solid var(--shape-primary);
+  outline: 2px solid var(--brand-primary);
+  border-radius: var(--border-radius-regular);
+}
