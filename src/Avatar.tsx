@@ -1,8 +1,12 @@
 import styles from "./Avatar.module.css";
 
-const Avatar = () => {
+type AvatarProps = {
+  image: string
+}
+
+const Avatar = ({image}: AvatarProps) => {
   return (
-    <img className={styles.container} src="https://github.com/emmanoeldev.png" alt="User avatar"/>
+    <img className={styles.container} src={image} alt="User avatar"/>
   );
 }
 
