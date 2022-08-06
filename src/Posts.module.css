@@ -90,6 +90,8 @@
   margin-block-start: 1rem;
   background-color: var(--bg-color);
   border-radius: var(--border-radius-regular);
+
+  color: #c4c4cc;
 }
 
 .postFooter button {
