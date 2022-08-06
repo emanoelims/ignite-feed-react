@@ -1,4 +1,5 @@
 import Header from "./Header";
+import Posts from "./Posts";
 import Profile from "./Profile";
 
 import styles from './App.module.css';
@@ -9,6 +10,7 @@ const App = () => {
       <Header/>
       <main className={styles.container}>
         <Profile/>
+        <Posts/>
       </main>
     </>
   );
