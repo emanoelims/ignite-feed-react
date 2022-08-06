@@ -1,5 +1,6 @@
 import styles from "./Posts.module.css";
 import Avatar from "./Avatar";
+import Comment from "./Comment";
 
 const Posts = () => {
   return (
@@ -26,6 +27,7 @@ const Posts = () => {
             <textarea placeholder="Escreva um comentário..."></textarea>
             <button type="submit">Publicar</button>
           </form>
+          <Comment />
         </footer>
       </article>
     </section>
