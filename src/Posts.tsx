@@ -1,11 +1,12 @@
 import styles from "./Posts.module.css";
+import Avatar from "./Avatar";
 
 const Posts = () => {
   return (
     <section className={styles.container}>
       <article className={styles.post}>
         <header className={styles.postHeader}>
-          <img src="https://github.com/emmanoeldev.png" alt="User Avatar"/>
+          <Avatar />
           <div>
             <h1>Emmanoel Mendes</h1>
             <p>CEO @MendesAssessoria</p>
