@@ -7,7 +7,7 @@ const Posts = () => {
     <section className={styles.container}>
       <article className={styles.post}>
         <header className={styles.postHeader}>
-          <Avatar />
+          <Avatar image="https://github.com/emmanoeldev.png" />
           <div>
             <h1>Emmanoel Mendes</h1>
             <p>CEO @MendesAssessoria</p>
