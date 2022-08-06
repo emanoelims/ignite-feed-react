@@ -1,13 +1,14 @@
-import styles from "./Posts.module.css";
 import Avatar from "./Avatar";
 import Comment from "./Comment";
+
+import styles from "./Posts.module.css";
 
 const Posts = () => {
   return (
     <section className={styles.container}>
       <article className={styles.post}>
         <header className={styles.postHeader}>
-          <Avatar image="https://github.com/emmanoeldev.png" />
+          <Avatar image="https://github.com/emmanoeldev.png"/>
           <div>
             <h1>Emmanoel Mendes</h1>
             <p>CEO @MendesAssessoria</p>
@@ -27,7 +28,7 @@ const Posts = () => {
             <textarea placeholder="Escreva um comentário..."></textarea>
             <button type="submit">Publicar</button>
           </form>
-          <Comment />
+          <Comment/>
         </footer>
       </article>
     </section>
