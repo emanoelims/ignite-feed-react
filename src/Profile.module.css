@@ -1,0 +1,72 @@
+.container {
+  overflow: hidden;
+  background-color: var(--shape-primary);
+  border-radius: var(--border-radius-regular);
+}
+
+.cover {
+  width: 100%;
+  height: 4.5rem;
+  object-fit: cover;
+}
+
+.content {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.avatar {
+  margin-block-start: -2.125rem;
+  box-sizing: content-box;
+  width: 3.75rem;
+  height: 3.75rem;
+  border: 2px solid var(--shape-primary);
+  outline: 2px solid var(--brand-primary);
+  border-radius: var(--border-radius-regular);
+}
+
+.name {
+  margin-block: 1rem 0.5rem;
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--color-title);
+}
+
+.role {
+  font-size: 0.875rem;
+  color: var(--color-support-text);
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  margin-block-start: 1.5rem;
+  padding-block: 1.5rem 2rem;
+  border-block-start: 1px solid var(--shape-separator-color);
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+
+  border: 1px solid var(--brand-primary);
+  border-radius: var(--border-radius-regular);
+  background-color: transparent;
+  padding: 1rem 1.5rem;
+
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--brand-primary);
+
+  transition: color 0.1s, background-color 0.1s;
+}
+
+.button:hover {
+  color: var(--color-whtie);
+  background-color: var(--brand-primary-dark);
+}
+
+.button svg {
+  margin-inline-end: 0.625rem;
+}
