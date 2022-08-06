@@ -1,7 +1,8 @@
 import {PencilLine} from "phosphor-react";
 
-import styles from './Profile.module.css';
 import Avatar from "./Avatar";
+
+import styles from './Profile.module.css';
 
 const Profile = () => {
   return (
