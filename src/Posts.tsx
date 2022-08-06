@@ -23,7 +23,7 @@ const Posts = () => {
         <footer className={styles.postFooter}>
           <h2>Deixe Seu feedback</h2>
           <form>
-            <textarea></textarea>
+            <textarea placeholder="Escreva um comentário..."></textarea>
             <button type="submit">Publicar</button>
           </form>
         </footer>
