@@ -1,21 +1,35 @@
 import {ThumbsUp, Trash} from "phosphor-react";
 
 import styles from "./Comment.module.css";
+import {formatDistance} from "./date-util";
 
-const Comment = () => {
+type CommentProps = {
+  author: {
+    name: string,
+    userImage: string
+  },
+  content: { type: string, content: string }[],
+  publishedAt: Date
+};
+
+const Comment = ({author, content, publishedAt}: CommentProps) => {
   return (
     <article className={styles.container}>
-      <img src="https://github.com/emmanoeldev.png" alt=""/>
+      <img src={author.userImage} alt=""/>
       <div className={styles.content}>
         <div className={styles.top}>
           <header className={styles.header}>
             <div>
-              <h1>Emmanoel Mendes (Você)</h1>
-              <time>Cerca de 2h</time>
+              <h1>{author.name}</h1>
+              <time dateTime={publishedAt.toISOString()}>{formatDistance(publishedAt)}</time>
             </div>
             <Trash width={20} height={20}/>
           </header>
-          <p>Muito bom Devon, parabéns!! 👏👏</p>
+          {content.map(c => {
+            if (c.type == "paragraph") {
+              return <p>{c.content}</p>
+            }
+          })}
         </div>
         <button className={styles.actions}>
           <ThumbsUp width={20} height={20}/>Aplaudir <span>03</span>
