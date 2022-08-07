@@ -20,7 +20,7 @@ const Profile = ({user}: ProfileProps) => {
            src={user.coverImage}
            alt=""/>
       <div className={styles.content}>
-        <Avatar image={user.userImage} />
+        <Avatar image={user.userImage}/>
         <h1 className={styles.name}>{user.name}</h1>
         <p className={styles.role}>{user.role}</p>
       </div>
